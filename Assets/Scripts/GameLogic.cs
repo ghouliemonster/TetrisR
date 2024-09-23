@@ -8,18 +8,15 @@ public class GameLogic : MonoBehaviour
     public static float quickDropTime = 0.05f;
     public static int width = 15, height = 30;
     public GameObject[] blocks;
+    public Transform[,] grid = new Transform[width, height];
 
-    // Start is called before the first frame update
+    
     void Start()
     {
         SpawnBlock();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
     public void SpawnBlock()
     {
         float guess = Random.Range(0, 1f);
