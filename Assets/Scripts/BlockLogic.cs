@@ -60,6 +60,7 @@ public class BlockLogic : MonoBehaviour
                     moveable = false;
                     gameObject.transform.position += new Vector3(0, 1, 0);
                     RegisterBlock();
+                    gameLogic.ClearLines();
                     gameLogic.SpawnBlock();
                 }
             }
@@ -72,6 +73,7 @@ public class BlockLogic : MonoBehaviour
                     moveable = false;
                     gameObject.transform.position += new Vector3(0, 1, 0);
                     RegisterBlock();
+                    gameLogic.ClearLines();
                     gameLogic.SpawnBlock();
                 }
             }
